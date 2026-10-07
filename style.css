@@ -332,28 +332,18 @@ img {
     margin-bottom: 14px;
 }
 
-
-/* THIS IS THE NEW PART */
-
 .subject-grid {
     display: grid;
     gap: 10px;
 }
 
-
-/* A-LEVEL: 3 SEPARATE BOXES */
-
 .alevel-grid {
     grid-template-columns: repeat(3, 1fr);
 }
 
-
-/* IGCSE: 4 BOXES PER ROW */
-
 .igcse-grid {
     grid-template-columns: repeat(4, 1fr);
 }
-
 
 .subject-item {
     min-height: 56px;
@@ -837,6 +827,7 @@ img {
 
 }
 
+
 /* =========================
    SCROLL PROGRESS BAR
 ========================= */
@@ -856,4 +847,32 @@ img {
     height: 100%;
     background: var(--purple);
     transition: width 0.05s linear;
+}
+
+/* LINKEDIN BUTTON */
+
+.linkedin-box {
+    margin-top: 32px;
+}
+
+.linkedin-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 13px 24px;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #7c3aed, #a855f7);
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    border: 1px solid rgba(168, 85, 247, 0.6);
+    box-shadow: 0 8px 25px rgba(124, 58, 237, 0.25);
+    transition: all 0.3s ease;
+}
+
+.linkedin-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px rgba(168, 85, 247, 0.4);
+    background: linear-gradient(135deg, #8b5cf6, #c084fc);
 }

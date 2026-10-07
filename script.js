@@ -1,10 +1,12 @@
 const cursor = document.querySelector(".custom-cursor");
 
 document.addEventListener("mousemove", function (event) {
+
     if (!cursor) return;
 
     cursor.style.left = event.clientX + "px";
     cursor.style.top = event.clientY + "px";
+
 });
 
 
@@ -66,9 +68,11 @@ navigationLinks.forEach(function (link) {
 
         event.preventDefault();
 
+
         if (transition) {
             transition.classList.add("active");
         }
+
 
         setTimeout(function () {
 
@@ -76,6 +80,7 @@ navigationLinks.forEach(function (link) {
                 behavior: "auto",
                 block: "start"
             });
+
 
             setTimeout(function () {
 
@@ -109,6 +114,7 @@ projectCards.forEach(function (card) {
             card.style.borderColor =
                 "rgba(155,92,255,0.45)";
 
+
             projectCards.forEach(function (otherCard) {
 
                 if (otherCard !== card) {
@@ -128,11 +134,14 @@ projectCards.forEach(function (card) {
 
 });
 
+
 /* =========================
    SCROLL PROGRESS
 ========================= */
 
-const progressBar = document.querySelector(".scroll-progress-bar");
+const progressBar = document.querySelector(
+    ".scroll-progress-bar"
+);
 
 window.addEventListener("scroll", function () {
 
@@ -141,11 +150,13 @@ window.addEventListener("scroll", function () {
     const scrollTop = window.scrollY;
 
     const documentHeight =
-        document.documentElement.scrollHeight - window.innerHeight;
+        document.documentElement.scrollHeight -
+        window.innerHeight;
 
     const scrollPercentage =
         (scrollTop / documentHeight) * 100;
 
-    progressBar.style.width = scrollPercentage + "%";
+    progressBar.style.width =
+        scrollPercentage + "%";
 
 });
